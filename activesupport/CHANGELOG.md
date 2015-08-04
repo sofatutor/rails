@@ -1,3 +1,10 @@
+*   Fix denial of service vulnerability in the XML processing.
+
+    CVE-2015-3227.
+
+    *Aaron Patterson*
+
+
 ## Rails 4.0.13 (January 6, 2015) ##
 
 *No changes*
