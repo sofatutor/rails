@@ -1,8 +1,12 @@
+## January 27, 2016 ##
+
 *   Use secure string comparisons for basic auth username / password to avoid timing attacks against applications that use basic auth.
 
     CVE-2015-7576.
     
     *Aaron Patterson*
+
+## August 4, 2015 ##
 
 *   Fix denial of service vulnerability in the XML processing.
 
