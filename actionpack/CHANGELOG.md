@@ -1,3 +1,11 @@
+## February 1, 2016 ##
+
+*   Remove unnecessary caching
+
+    CVE-2015-7581.
+    
+    *Eileen M. Uchitelle*
+
 ## Rails 4.0.13 (January 6, 2015) ##
 
 *   Added an explicit error message, in `ActionView::PartialRenderer`
