@@ -1,5 +1,11 @@
 ## February 1, 2016 ##
 
+*   allow :file to be outside rails root, but anything else must be inside the rails view directory.
+
+    CVE-2016-0752
+
+    *Aaron Patterson*
+
 *   stop caching mime types globally.
 
     CVE-2016-0751
