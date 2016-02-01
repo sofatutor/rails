@@ -1,12 +1,12 @@
 ## February 1, 2016 ##
 
-*   stop caching mime types globally
+*   stop caching mime types globally.
 
     CVE-2016-0751
 
     *Aaron Patterson*
 
-*   Remove unnecessary caching
+*   Remove unnecessary caching.
 
     CVE-2015-7581.
     

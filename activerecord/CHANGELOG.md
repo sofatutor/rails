@@ -1,6 +1,10 @@
 ## February 1, 2016 ##
 
-*   Don't short-circuit reject_if proc
+*   Remove `DEFAULT NULL` for primary key column to support MySQL 5.7.3.
+
+    *Yasuo Honda*
+
+*   Don't short-circuit reject_if proc.
 
     CVE-2015-7577.
     
