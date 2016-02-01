@@ -1,3 +1,11 @@
+## February 1, 2016 ##
+
+*   Don't short-circuit reject_if proc
+
+    CVE-2015-7577.
+    
+    *Andrew White*
+
 ## Rails 4.0.13 (January 6, 2015) ##
 
 *   Renaming a table in pg also renames the primary key index.
