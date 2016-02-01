@@ -1,3 +1,23 @@
+## February 1, 2016 ##
+
+*   allow :file to be outside rails root, but anything else must be inside the rails view directory.
+
+    CVE-2016-0752
+
+    *Aaron Patterson*
+
+*   stop caching mime types globally.
+
+    CVE-2016-0751
+
+    *Aaron Patterson*
+
+*   Remove unnecessary caching.
+
+    CVE-2015-7581.
+    
+    *Eileen M. Uchitelle*
+
 ## Rails 4.0.13 (January 6, 2015) ##
 
 *   Added an explicit error message, in `ActionView::PartialRenderer`
