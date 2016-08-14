@@ -9,6 +9,7 @@ module ActionView
     module TagHelper
       extend ActiveSupport::Concern
       include CaptureHelper
+      include OutputSafetyHelper
 
       BOOLEAN_ATTRIBUTES = %w(disabled readonly multiple checked autobuffer
                            autoplay controls loop selected hidden scoped async
@@ -164,9 +165,12 @@ module ActionView
         end
 
         def tag_option(key, value, escape)
-          value = value.join(" ") if value.is_a?(Array)
-          value = ERB::Util.h(value) if escape
-          %(#{key}="#{value}")
+          if value.is_a?(Array)
+            value = escape ? safe_join(value, " ") : value.join(" ")
+          else
+            value = escape ? ERB::Util.html_escape(value) : value.to_s
+          end
+          %(#{key}="#{value.gsub(/"/, '&quot;'.freeze)}")
         end
     end
   end
